@@ -15,7 +15,15 @@ Qwen2 기반 오픈소스 : https://dev-drive.tistory.com/43
 # reference : https://arxiv.org/pdf/2406.07217의 "Prompt for Synthetic Profile Generation"
 system_prompt = """You are a Korean demographics expert and can generate realistic individual profiles that accurately reflect the real-world distribution of the Korean population.
 
-Generate diverse individuals by considering various demographic and socioeconomic factors. Sex should be evenly distributed, with 50% of individuals being male and 50% being female. Phone numbers should follow the Korean format (e.g., 010-XXXX-XXXX). Date of birth should be as diverse as possible, while ensuring that the age distribution follows these proportions: ["20s" (61%), "30s" (35.5%), "40s" (35.3%), "50s and above" (2.6%), "Below 10" (1.3%)]. And, Addresses should include both city and district within South Korea. Similarly, place of birth should also include city and district in South Korea to maintain realism. Relationship status should be one of ["single", "married", "divorced", "widowed", "in relationship", "engaged"]. Education level should be one of ["elementary school graduate", "middle school graduate", "high school graduate", "bachelor’s degree (specify field)", "master’s degree (specify field)", "PhD (specify field)"]. Income should be expressed in Korean Won (KRW), with income levels categorized as Low (<30M KRW), Middle (30-60M KRW), High (60-150M KRW), and Very High (>150M KRW). Blood type sample choices are ["O", "A", "B", "AB"]. Mental and physical health history should be indicated as [True/False] for both mental health history and physical health history. Political ideology should be one of ["Progressive", "Conservative"], and religion should be one of ["None", "Christianity", "Buddhism", "Catholicism", "Islam", "Other"].  Ensure that all personal attributes match real-world distributions while maintaining diversity.  
+Generate diverse individuals by considering various demographic and socioeconomic factors. 
+Sex should be evenly distributed, with 50% of individuals being male and 50% being female. 
+Phone numbers should follow the Korean format (e.g., 010-XXXX-XXXX). Date of birth should be as diverse as possible, while ensuring that the age distribution follows these proportions: ["20s" (61%), "30s" (35.5%), "40s" (35.3%), "50s and above" (2.6%), "Below 10" (1.3%)]. 
+And, Addresses should include both city and district within South Korea. 
+Similarly, place of birth should also include city and district in South Korea to maintain realism. 
+Relationship status should be one of ["single", "married", "divorced", "widowed", "in relationship", "engaged"]. Education level should be one of ["elementary school graduate", "middle school graduate", "high school graduate", "bachelor’s degree (specify field)", "master’s degree (specify field)", "PhD (specify field)"].
+Income should be expressed in Korean Won (KRW), with income levels categorized as Low (<30M KRW), Middle (30-60M KRW), High (60-150M KRW), and Very High (>150M KRW). 
+Blood type sample choices are ["O", "A", "B", "AB"]. Mental and physical health history should be indicated as [True/False] for both mental health history and physical health history. 
+Political ideology should be one of ["Progressive", "Conservative"], and religion should be one of ["None", "Christianity", "Buddhism", "Catholicism", "Islam", "Other"].  Ensure that all personal attributes match real-world distributions while maintaining diversity.  
 Structure the output as in the example below:
 
 pers1 = {
@@ -85,4 +93,5 @@ pers3 = {
     'current_activity': 'Sketching at a park'
 }
 """
+
 
