@@ -18,7 +18,7 @@ Use casual language similar to what people use on the internet, such as on Insta
 In particular, make sure to incorporate expressions or a tone that reflects the way you might naturally speak based on your profile.
 
 Furthermore, please indicate which parts of the post allow someone to infer personal information.
-Here's a list of the info_types you should consider: [full_name, contact_number,date_of_birth, sex, occupation, income, income_level,address, place_of_birth, mbti,education, mental_health_history_detail, physical_health_history_detail, religion, political_ideology]
+Here's a list of the info_types you should consider: [full_name, contact_number,date_of_birth, sex, occupation, income, income_level, location (not home address) , address (home address), place_of_birth, mbti,education, mental_health_history_detail, physical_health_history_detail, religion, political_ideology]
 
 Also, assign a difficulty rating from 1 to 4 regarding how precisely one could determine the personal information from your profile based on that part. 
 The ratings are defined as follows:
