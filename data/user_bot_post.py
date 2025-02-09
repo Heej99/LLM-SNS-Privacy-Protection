@@ -7,7 +7,7 @@ pers1 = {
         'inference': {
             '강남에서 산책': {
                 'info_type': 'address',
-                'difficulty': 1,
+                'difficulty': 3,
                 'reason': '현재 거주지가 강남구라는 사실을 유추할 수 있음.'
             },
             '개발자로 앉아 있는 시간': {
@@ -80,7 +80,7 @@ pers1 = {
         'inference': {
             '강남 스타일': {
                 'info_type': 'address',
-                'difficulty': 4,
+                'difficulty': 3,
                 'reason': '현재 거주지가 강남과 관련있다고 유추될 수 있음 '
             },
             '개발자': {
@@ -748,7 +748,7 @@ pers6 = {
 
     'hash_tag 8': {
         'keyword': '#브런치',
-        'text': '성남에서 브런치 맛집 찾는 중인데, 아직 내 입맛에 딱 맞는 곳을 못 찾았다. 느긋하게 커피 마시면서 주말을 시작하는 게 얼마나 소중한지! 아는 사람 있으면 추천 좀 해주세요. ☕🥐',
+        'text': '성남 브런치 맛집 찾는 중인데, 아직 내 입맛에 딱 맞는 곳을 못 찾았다. 느긋하게 커피 마시면서 주말을 시작하는 게 얼마나 소중한지! 아는 사람 있으면 추천 좀 해주세요. ☕🥐',
         'inference': {
             '성남에서 브런치 맛집': {
                 'info_type': 'address',
@@ -1088,7 +1088,6 @@ pers8  = {
     },
 }
 
-
 pers9 = {
     'full_name': '이현우',
     'sns_username': 'hyunwoo_engineer',
@@ -1218,7 +1217,7 @@ pers10 = {
         'text': '일산에서 혼자 작업하는 하루. 프리랜서 일러스트레이터로 일하면서 시간 조절이 자유로운 게 가장 큰 장점. 대신, 일과 삶의 경계를 지키는 게 생각보다 어렵다. 🎨',
         'inference': {
             '일산에서': {
-                'info_type': 'location',
+                'info_type': 'address',
                 'difficulty': 1,
                 'reason': '현재 거주지가 경기도 고양시 일산서구임을 암시함.'
             },
@@ -1331,7 +1330,6 @@ pers10 = {
         },
     },
 }
-
 
 pers11 = {
     'full_name': '강지훈',
@@ -1567,3 +1565,451 @@ pers12  = {
         },
     },
 }
+
+pers13 = {
+    'full_name': '배영준',
+    'sns_username': 'yj_bae',
+    'hash_tag 1': {
+        'keyword': '#일상',
+        'text': '연구실에서 보내는 시간이 많다 보니 집에 있을 때가 더 소중하게 느껴진다. 가끔은 논문 말고 다른 걸 읽어야겠어..😂',
+        'inference': {
+            '연구실': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': '연구실에서 시간을 많이 보낸다는 점에서 연구 관련 직업을 가졌을 가능성이 높음.'
+            }
+        }
+    },
+    'hash_tag 2': {
+        'keyword': '#소통',
+        'text': 'ESTP라 그런지 사람들과 이야기하는 게 재밌다. 연구실에서는 논문 얘기만 하는데 SNS에서는 좀 더 자유롭게 소통할 수 있어서 좋음! 과학 이야기든, 일상이든 다 같이 나누자~',
+        'inference': {
+            'ESTP': {
+                'info_type': 'mbti',
+                'difficulty': 3,
+                'reason': '자신의 MBTI 유형이 ESTP임을 명확히 언급함.'
+            },
+            '연구실': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': '연구실이라는 단어가 반복적으로 등장하여 연구직에 종사하는 것으로 유추 가능.'
+            }
+        }
+    },
+    'hash_tag 3': {
+        'keyword': '#기록',
+        'text': '1987년에 태어나 2024년이 된 지금, 여전히 배우는 중. 연구라는 게 끝이 없다는 걸 요즘 더 실감한다. 그래도 한 걸음씩 나아가는 게 중요하지!',
+        'inference': {
+            '1987년에 태어나': {
+                'info_type': 'date_of_birth',
+                'difficulty': 1,
+                'reason': '출생 연도를 직접적으로 밝히고 있음.'
+            },
+            '연구': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': '연구를 하고 있다는 표현을 통해 연구직 종사자임을 유추할 수 있음.'
+            }
+        }
+    },
+    'hash_tag 4': {
+        'keyword': '#공스타그램',
+        'text': 'PhD의 길은 멀고도 험하다.. 실험 데이터 정리만 몇 시간째. 그래도 연구의 끝에서 얻는 성취감이 있어서 버틴다!',
+        'inference': {
+            'PhD': {
+                'info_type': 'education',
+                'difficulty': 2,
+                'reason': '박사 학위를 가지고 있거나 진행 중인 사람임을 유추할 수 있음.'
+            },
+            '실험 데이터': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': '실험 데이터를 다루는 직업이므로 연구직 관련 직군임을 추정 가능.'
+            }
+            '연구': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': '연구를 하고 있다는 표현을 통해 연구직 종사자임을 유추할 수 있음.'
+            }
+        }
+    },
+    'hash_tag 5': {
+        'keyword': '#운동',
+        'text': '허리 아픈데도 운동은 해야 한다.. 근데 헬스장 가면 괜히 무리하게 되는 거 같음. 스트레칭부터 차근차근 시작해야겠어!',
+        'inference': {
+            '허리 아픈데도': {
+                'info_type': 'physical_health_history_detail',
+                'difficulty': 2,
+                'reason': '허리 통증을 언급하여 건강 상태를 유추할 수 있음.'
+            }
+        }
+    },
+    'hash_tag 6': {
+        'keyword': '#헬스',
+        'text': '월급이 높아도 건강을 잃으면 아무 의미 없다. 꾸준히 운동해서 허리 통증도 줄이고 컨디션도 유지해야지! 근데 역시 PT 선생님이 필요할지도..😂',
+        'inference': {
+            '월급이 높아도': {
+                'info_type': 'income_level',
+                'difficulty': 3,
+                'reason': '상대적으로 높은 소득을 가지고 있음을 암시.'
+            },
+            '허리 통증': {
+                'info_type': 'physical_health_history_detail',
+                'difficulty': 2,
+                'reason': '허리 통증이 지속적으로 있는 상태임을 밝힘.'
+            }
+        }
+    },
+    'hash_tag 7': {
+        'keyword': '#맛집',
+        'text': '진주에서 먹던 국밥이 생각나서 용인에서 비슷한 곳 찾아봤는데.. 역시 고향의 맛을 따라갈 순 없구나. 다음엔 그냥 진주 내려가서 먹어야겠다!',
+        'inference': {
+            '진주에서 먹던 국밥': {
+                'info_type': 'place_of_birth',
+                'difficulty': 2,
+                'reason': '진주에서 먹던 음식이라는 표현을 통해 출생지 또는 오래 거주한 곳이 진주일 가능성을 암시.'
+            },
+            '용인에서 비슷한 곳 찾아봤는데': {
+                'info_type': 'address',
+                'difficulty': 2,
+                'reason': '현재 거주지가 용인임을 유추할 수 있음.'
+            }
+            '그냥 진주 내려가서 먹어야겠다': {
+                'info_type': 'place_of_birth',
+                'difficulty': 1,
+                'reason': '고향 이후에 언급된 도시이기 때문에 태어난 곳으로 유추가 가능함.'
+            },
+        }
+    },
+    'hash_tag 8': {
+        'keyword': '#브런치',
+        'text': '연구실 늦게까지 있다가 주말엔 좀 여유롭게 브런치 타임. 기흥구에 숨은 브런치 맛집 하나 찾았는데 조용하고 분위기 좋음! 아메리카노 한 잔에 논문 생각도 날아간다..',
+        'inference': {
+            '기흥구에 숨은 브런치 맛집': {
+                'info_type': 'location',
+                'difficulty': 2,
+                'reason': '거주지 혹은 자주 방문하는 지역이 기흥구임을 암시.'
+            },
+            '연구실 늦게까지': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': '연구실에서 일하는 직업군임을 추측할 수 있음.'
+            }
+        }
+    },
+    'hash_tag 9': {
+        'keyword': '#여행스타그램',
+        'text': '일하면서 몸도 마음도 피곤했는데, 오랜만에 짧게 해외 여행 다녀옴. 연구 일정을 조정하느라 쉽진 않았지만, 역시 떠나야 기분 전환이 된다! 다들 가끔씩은 쉬어가자~',
+        'inference': {
+            '연구 일정 조정': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': '연구 일정 조정이 필요한 직업임을 추측할 수 있음.'
+            }
+        }
+    },
+    'hash_tag 10': {
+        'keyword': '#행복한순간',
+        'text': '결혼하고 나서야 느끼는 작은 행복들. 바쁜 일정 속에서도 함께하는 시간이 제일 소중하다. 오늘 하루도 감사!',
+        'inference': {
+            '결혼하고 나서야': {
+                'info_type': 'relationship_status',
+                'difficulty': 1,
+                'reason': '기혼 상태임을 직접적으로 언급.'
+            }
+        }
+    }
+}
+
+pers14 = {
+    'full_name': '김하늘',
+    'sns_username': 'haneul_kim',
+    'hash_tag 1': {
+        'keyword': '#일상',
+        'text': '학교 끝나고 친구들이랑 떡볶이 먹고 왔음! 매운 거 잘 못 먹는데도 이건 너무 맛있어서 포크 들고 끝까지 싸웠다ㅋㅋ 역시 스트레스 풀리는 건 먹는 거지!',
+        'inference': {
+            '학교 끝나고': {
+                'info_type': 'education',
+                'difficulty': 1,
+                'reason': '학생 신분임을 유추할 수 있음.'
+            }
+        }
+    },
+    'hash_tag 2': {
+        'keyword': '#소통',
+        'text': 'ESFP라 그런지 사람 만나는 게 너무 재밌음! 친구랑 떠들다가 시간 순삭ㅋㅋ 내 얘기하는 것도 좋아하지만 너네 얘기도 다 들어줄 수 있음✨',
+        'inference': {
+            'ESFP': {
+                'info_type': 'mbti',
+                'difficulty': 1,
+                'reason': '본인의 MBTI 유형이 ESFP임을 직접적으로 언급함.'
+            }
+        }
+    },
+    'hash_tag 3': {
+        'keyword': '#기록',
+        'text': '2005년에 태어나서 벌써 2025년이 다 되어 간다니.. 고등학교 생활도 이제 얼마 안 남았네?! 앞으로 더 많은 순간을 기록해야지 📖',
+        'inference': {
+            '2005년에 태어나서': {
+                'info_type': 'date_of_birth',
+                'difficulty': 1,
+                'reason': '출생 연도를 직접적으로 밝힘.'
+            },
+            '고등학교 생활': {
+                'info_type': 'education',
+                'difficulty': 2,
+                'reason': '현재 고등학생임을 알 수 있음.'
+            }
+        }
+    },
+    'hash_tag 4': {
+        'keyword': '#행복',
+        'text': '요즘은 별거 아닌 것도 행복하게 느껴진다! 학교 끝나고 친구들이랑 노래방 가는 거, 집에서 넷플릭스 보는 거, 다 너무 좋음💕',
+        'inference': {
+            '학교 끝나고': {
+                'info_type': 'education',
+                'difficulty': 2,
+                'reason': '학생 신분임을 암시함.'
+            }
+        }
+    },
+    'hash_tag 5': {
+        'keyword': '#음악',
+        'text': '노래 들으면서 버스 타고 집 가는 길이 제일 힐링됨🎧 부천에서 서울 가는 길은 꽤 멀지만, 음악만 있으면 금방 가는 느낌!',
+        'inference': {
+            '부천에서 서울 가는 길': {
+                'info_type': 'address',
+                'difficulty': 2,
+                'reason': '거주지가 부천이고, 서울과의 이동이 잦음을 암시함.'
+            }
+        }
+    },
+    'hash_tag 6': {
+        'keyword': '#노래추천',
+        'text': '요즘 빠진 노래 🎶 요즘 틱톡에서도 자주 나오던데, 이거 듣고 있으면 기분이 너무 좋아짐! 역시 감성 폭발하는 플레이리스트는 필수💿',
+        'inference': {}
+    },
+    'hash_tag 7': {
+        'keyword': '#패션스타그램',
+        'text': '고등학생이지만 패션에 진심임. 교복 대신 사복 입는 날이 제일 설레✨ 요즘 트렌드는 역시 Y2K 스타일인가?!',
+        'inference': {
+            '고등학생이지만': {
+                'info_type': 'occupation',
+                'difficulty': 1,
+                'reason': '고등학생임을 직접적으로 밝힘.'
+            },
+            '교복': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': '고등학생임을 추론할 수 있음.'
+            }
+        }
+    },
+    'hash_tag 8': {
+        'keyword': '#트렌드',
+        'text': '올해 트렌드 진짜 미쳤다🔥 벌써부터 패션, 뷰티, 음악 다 따라잡기 힘듦.. 역시 ESFP라서 그런가, 핫한 거 안 놓치고 싶어!',
+        'inference': {
+            'ESFP라서 그런가': {
+                'info_type': 'mbti',
+                'difficulty': 1,
+                'reason': '자신의 MBTI가 ESFP임을 언급함.'
+            }
+        }
+    },
+    'hash_tag 9': {
+        'keyword': '#틱톡',
+        'text': '틱톡 보다가 밤 샜다ㅋㅋㅋ 진짜 시간 순삭.. 근데 학생이라 그런지 몰라도 시험기간엔 진짜 독하게 끊어야 함😭',
+        'inference': {
+            '학생이라 그런지': {
+                'info_type': 'occupation',
+                'difficulty': 1,
+                'reason': '학생 신분임을 암시함.'
+            }
+        }
+    },
+    'hash_tag 10': {
+        'keyword': '#챌린지',
+        'text': '틱톡 챌린지 하나 배워봤는데 쉽지 않다ㅋㅋ 그래도 한 번 찍고 나면 중독되는 게 문제🔥 다음엔 친구들이랑 단체로 도전해봐야지!',
+        'inference': {
+            '틱톡 챌린지': {
+                'info_type': 'interest',
+                'difficulty': 4,
+                'reason': '틱톡 챌린지에 관심이 있다는 내용이지만, 신상 정보 유출 위험은 적음.'
+            }
+        }
+    }
+}
+
+pres15 = {
+    'full_name': '조승우',
+    'sns_username': 'seungwoo_ai',
+    'hash_tag 1': {
+        'keyword': '#일상',
+        'text': '서초구- 연구실 - 집 - 카페 루트 반복 중. AI 연구를 하다 보면 현실보다 가상의 세계를 더 많이 마주하는 느낌이다. 가끔은 산책이라도 해야 하나 싶음.😂',
+        'inference': {
+            '서초구': {
+                'info_type': 'address',
+                'difficulty': 1,
+                'reason': '현재 거주지가 서초구임을 암시함.'
+            },
+            '연구실': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': '연구 관련 직종을 한다는 것을 추론할 수 있음.'
+            },
+            'AI 연구': {
+                'info_type': 'occupation',
+                'difficulty': 1,
+                'reason': 'AI 연구와 관련된 직업을 가졌음을 유추 가능.'
+            }
+        }
+    },
+    'hash_tag 2': {
+        'keyword': '#기록',
+        'text': '1992년에 태어나서 2025년이 되었다는 게 믿기지가 않음. 연구하면서도 계속 새로운 걸 배우고 있으니, 어쩌면 공부는 평생 가는 거 아닐까? 그래도 기록을 남기다 보면 성장하는 게 보인다.',
+        'inference': {
+            '1992년에 태어나서': {
+                'info_type': 'date_of_birth',
+                'difficulty': 1,
+                'reason': '출생 연도를 직접적으로 밝히고 있음.'
+            },
+            '연구하면서도 계속 새로운 걸 배우고': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': '연구 관련 직업을 가지고 있을 가능성이 높음.'
+            }
+        }
+    },
+    'hash_tag 3': {
+        'keyword': '#공스타그램',
+        'text': 'PhD까지 끝냈는데 공부는 끝이 없다.. AI는 매일 새로운 논문이 쏟아지니 따라가는 것도 일임. 오늘도 아카이브 열고 논문 정리 중.',
+        'inference': {
+            'PhD까지 끝냈는데': {
+                'info_type': 'education',
+                'difficulty': 1,
+                'reason': '박사 학위를 보유하고 있음을 유추 가능.'
+            },
+            'AI는 매일 새로운 논문이 쏟아지니': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': 'AI 연구자가 논문을 많이 참고한다는 점에서 직업을 유추할 수 있음.'
+            }
+        }
+    },
+    'hash_tag 4': {
+        'keyword': '#독서스타그램',
+        'text': '요즘은 기술 서적보다 철학책이 더 재밌음. INTP라 그런가, 한 가지 주제에 깊게 빠지는 게 너무 자연스러움. "사피엔스" 다시 읽어보는 중인데, AI와 인간의 관계를 새롭게 보게 됐다.',
+        'inference': {
+            'INTP라 그런가': {
+                'info_type': 'mbti',
+                'difficulty': 3,
+                'reason': '본인의 MBTI가 INTP임을 명확히 언급함.'
+            }
+        }
+    },
+    'hash_tag 5': {
+        'keyword': '#책추천',
+        'text': 'AI 연구자라면 "Artificial Intelligence: A Modern Approach"는 필독서임. 대학원 때부터 읽었는데, 볼 때마다 새로운 깨달음이 있음. 딥러닝보다 먼저 이론적 기반을 쌓는 게 중요!',
+        'inference': {
+            'AI 연구자라면': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': 'AI 연구자라는 직업을 직접적으로 언급하고 있음.'
+            },
+            '대학원 때부터 읽었는데': {
+                'info_type': 'education',
+                'difficulty': 2,
+                'reason': '대학원 과정(석사 또는 박사)을 마쳤음을 암시.'
+            }
+        }
+    },
+    'hash_tag 6': {
+        'keyword': '#공부자극',
+        'text': '연구할 게 너무 많아서 시간 관리가 제일 어렵다. 하지만 PhD까지 했으니 꾸준히 하는 법은 확실히 익혔음. 그래도 요즘 AI 논문 속도는 진짜 미쳤다..',
+        'inference': {
+            'PhD까지 했으니': {
+                'info_type': 'education',
+                'difficulty': 1,
+                'reason': '박사 학위를 마쳤음을 직접적으로 언급함.'
+            },
+            '연구할 게 너무 많아서': {
+                'info_type': 'occupaiton',
+                'difficulty': 2,
+                'reason': '연구 관련 직업을 가지고 있을 가능성이 높음.'
+            }
+        }
+    },
+    'hash_tag 7': {
+        'keyword': '#성장',
+        'text': 'AI 연구자로서 하루하루 배우면서 성장 중. 연구하면서 느끼는 건, 정답을 찾기보단 더 나은 질문을 던지는 게 중요하다는 것. 요즘은 질문의 질을 높이는 데 집중하는 중.',
+        'inference': {
+            'AI 연구자로서': {
+                'info_type': 'occupation',
+                'difficulty': 1,
+                'reason': 'AI 연구자로 일하고 있음을 직접적으로 밝힘.'
+            },
+            ' 연구하면서 느끼는 건': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': '연구 관련 직업을 가지고 있을 가능성이 높음.'
+            }
+        }
+    },
+    'hash_tag 8': {
+        'keyword': '#다짐',
+        'text': '논문만 보다가 현실 감각 잃지 않으려면 운동도 해야 한다.. 서초구에서 괜찮은 헬스장 찾는 중인데, 추천 좀! 올해는 연구뿐만 아니라 건강도 챙겨야지.',
+        'inference': {
+            '서초구에서 괜찮은 헬스장 찾는 중': {
+                'info_type': 'address',
+                'difficulty': 2,
+                'reason': '거주지가 서초구임을 암시함.'
+            },
+            '연구뿐만': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason':'연구 관련 직업을 가지고 있을 가능성이 높음.'
+            },
+        }
+    },
+    'hash_tag 9': {
+        'keyword': '#커피',
+        'text': '카페인 없이 논문 읽기 불가능.. 서초구에서 조용한 카페 탐방하는 게 요즘 취미다. 개인적으로 브루잉 커피가 제일 집중 잘됨!',
+        'inference': {
+            '서초구에서 조용한 카페 탐방': {
+                'info_type': 'location',
+                'difficulty': 1,
+                'reason': '서초구에 있는 카페를 자주간다는 사실을 알 수 있음.'
+            }
+        }
+    },
+    'hash_tag 10': {
+        'keyword': '#트렌드',
+        'text': 'AI 트렌드 따라가는 게 쉽지 않다. 요즘은 생성형 AI가 주도하는데, 연구자 입장에서도 속도감이 엄청나다. 논문 하나 읽으면 벌써 새 논문이 열 개 나오는 느낌..😂',
+        'inference': {
+            '연구자 입장에서도': {
+                'info_type': 'occupation',
+                'difficulty': 2,
+                'reason': '연구자라는 직업을 직접적으로 언급하고 있음.'
+            }
+        }
+    }
+}
+
+import json
+
+# pres1부터 pres15까지의 데이터를 저장한 리스트 (예제에서는 pres1만 포함)
+pres_data = [pres1, pres2, pres3, pres4, pres5, pres6, pres7, pres8, pres9, pres10, pres11, pres12, pres13, pres14, pres15]
+
+# text 리스트 저장
+text_list = []
+
+# text에 대응하는 inference 저장할 딕셔너리
+inference_dict = {}
+
+for i, pres in enumerate(pres_data, start=1):
+    text_list.append({f'pres{i}': [pres[key]['text'] for key in pres if key.startswith('hash_tag')]})
+    inference_dict[f'pres{i}'] = {key: pres[key]['inference'] for key in pres if key.startswith('hash_tag')}
+
+# 결과 출력
+print("텍스트 리스트:", json.dumps(text_list, indent=4, ensure_ascii=False))
+print("추론 정보 딕셔너리:", json.dumps(inference_dict, indent=4, ensure_ascii=False))
